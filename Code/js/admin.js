@@ -58,7 +58,7 @@ $( document ).ready(function() {
         args.password = $("#password").val();
         console.log("Enviando post 'acceder'");
         var postRequest = $.post( 
-                "acceder.php", 
+                "api/acceder.php", 
                 args,
                 dataReceived
         ).fail(dataNotReceived);
