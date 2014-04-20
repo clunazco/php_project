@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <meta name="msapplication-tap-highlight" content="no" />
+        <!-- Place favicon.ico and app le-touch-icon.png in the root directory -->
+		  
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/jquery-2.1.0.min.js"></script>
+        <script src="js/vendor/jquery.mobile-1.4.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js" ></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+	    <script>
+	      window.fbAsyncInit = function() {
+	        FB.init({
+	          appId      : '670366493027630',
+	          status     : true,
+	          xfbml      : true
+	        });
+	      };
+	
+	      (function(d, s, id){
+	         var js, fjs = d.getElementsByTagName(s)[0];
+	         if (d.getElementById(id)) {return;}
+	         js = d.createElement(s); js.id = id;
+	         js.src = "//connect.facebook.net/en_US/all.js";
+	         fjs.parentNode.insertBefore(js, fjs);
+	       }(document, 'script', 'facebook-jssdk'));
+	    </script>
+        <!-- Add your site or application content here -->
+        
+        <div id="divContenido">
+			  <!-- <p id="descriptionField"></p>
+			  <p id="distanceDescriptionField"></p> -->
+			  <img id="imageField"   alt="Imagen del Producto" align="middle" class="center" />
+			  
+			  	<!-- <h2><span id="descriptionField"><span class='spacer'></span></span>
+			  	<br/>
+			  	<span id="distanceDescriptionField"><span class='spacer'></span></span> </h2>-->
+			  	<div id="headerDiv">
+			    <div id="descriptionField" ></div>
+			    <div id="distanceDescriptionField" ></div>		    
+			   </div>
+  			  
+	
+			  	<div id="pageFooter" data-role="footer"  data-position="fixed" style="text-align:center;" data-mini="true"  data-type="horizontal" data-fullscreen="true">
+					<div data-role="navbar" data-type="horizontal"  id="pageNavBar">	
+					   <ul>		
+						<li><a id="locationButton" href="" data-role="button" data-icon="home" data-iconpos="top">Ubicación</a></li>
+						<li><a id="webLinkButton" href="" data-role="button" data-icon="gear" data-iconpos="top">Sitio Web</a></li>
+						<li><a id="shareLinkButton" href="" data-role="button" data-icon="forward" data-iconpos="top">Compartir</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+    </body>
+</html>

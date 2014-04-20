@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <meta name="msapplication-tap-highlight" content="no" />
+        <!-- Place favicon.ico and app le-touch-icon.png in the root directory -->
+		  
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/jquery-2.1.0.min.js"></script>
+        <script src="js/vendor/jquery.mobile-1.4.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/adminBase.js"></script>
+        <script src="js/admin.js"></script>
+    </head>
+    <body>
+       <div data-role="page" id ="paginaRegistro"> 
+           <div data-role="header">
+               <h1>Acceder</h1>
+           </div> 
+           <div data-role="content">
+               <form action="login.php">
+                   Correo Electrónico: <input type="text" name="email" id="email"><br>
+                   Contraseña: <input type="password" name="password" id="password">
+                   
+               </form> 
+               <button id="botonAcceder">Ingresar</button>
+            </div>
+           <div id="areaMensajes"></div>
+           <div data-role="footer" data-position="fixed">
+               
+           </div> 
+       </div> 
+        <div data-role="page" id ="paginaOperaciones"> 
+            <div data-role="header">
+               <h1>Operaciones</h1>
+            </div> 
+            <div data-role="content">
+                <button id="botonAgregarAvisos">Agregar un aviso</button>
+            </div>
+        </div>
+        <div data-role="page" id ="paginaAgregarAnuncio">
+            <div data-role="header">
+               <h1>Agregar aviso</h1>
+               <div id="areaMensajes">Obteniendo informacion...</div>
+           </div> 
+            <div data-role="content">
+                Cliente: 
+                <select id="combo_addAd_cliente">
+                        <option value="">Select one...</option>                                                
+                </select><br/>
+                Contrato:
+                <select id="combo_addAd_contrato">
+                        <option value="">Select one...</option>                                                
+                </select>
+                
+                <div>
+                    Ingrese los datos del aviso a continuación
+                    <form>
+                        Imagen:<input type="file" name="adImage" id="adImageField" accept="image/*" capture="camera"><br>
+                        Descripción<input type="text" name="adDescr" id="adDescrField" ><br>
+                        Número Telefónico<input type="text" name="adPhone" id="adDescrField" ><br>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
